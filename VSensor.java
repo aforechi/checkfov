@@ -39,7 +39,7 @@ class VSensor
 		Ay = new BigDecimal(y);
 		radius = r;
 		angle = a;
-		orientation = o;
+		orientation = o - a / 2; // set FOV center as reference
 		
 		fov = new FoV();
 		computeVerticesIniciais();
