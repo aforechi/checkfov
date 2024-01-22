@@ -11,15 +11,15 @@ class Target
 	private int ID;
 	
 	//(x,y) position of the target
-	private int tx;
-	private int ty;
+	private double tx;
+	private double ty;
 
 	//The number of times the Target was viewed
 	private int numberViewed;
 
 	private boolean viewed=false;
 	
-	public Target (int id, int x, int y)
+	public Target (int id, double x, double y)
 	{
 		//Initial configuration
 		ID = id;
@@ -35,11 +35,11 @@ class Target
 		return ID;
 	}
 
-	public int getTx()
+	public double getTx()
 	{
 		return tx;
 	}
-	public int getTy()
+	public double getTy()
 	{
 		return ty;
 	}

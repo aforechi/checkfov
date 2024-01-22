@@ -380,8 +380,8 @@ public class CheckFoV
 				ArrayList<Vertex> vert = fov.getVertices();
 				for (int h=0; h < vert.size(); h++)
 				{
-					buffer.append (vert.get(h).getX() + "\n");
-					buffer.append (vert.get(h).getY() + "\n");
+					buffer.append (vert.get(h).getX() * 100 + "\n");
+					buffer.append (vert.get(h).getY() * 100 + "\n");
 				}
 			}
 	
@@ -406,8 +406,8 @@ public class CheckFoV
 			for (int i=0; i < targets.size(); i++)
 			{				
 				Target t = targets.get(i);
-				buffer.append (t.getTx() + "\n");
-				buffer.append (t.getTy() + "\n");
+				buffer.append (t.getTx() * 100 + "\n");
+				buffer.append (t.getTy() * 100 + "\n");
 				buffer.append (t.getNumberViews() + "\n");
 			}
 	

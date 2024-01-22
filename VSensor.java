@@ -30,7 +30,7 @@ class VSensor
 	//Computed FoV or OFoV
 	private FoV fov;
 
-	public VSensor (int id, int x, int y, int r, int a, int o)
+	public VSensor (int id, double x, double y, int r, int a, int o)
 	{
 		//Initial configuration
 		ID = id;
