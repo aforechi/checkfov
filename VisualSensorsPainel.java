@@ -33,6 +33,13 @@ class VisualSensorsPainel extends JPanel
 			String line;
 
 			/////////////////////////////////
+			// Move the origin to bottom-left, flip Y axis
+			Insets insets = getInsets();
+			int h = getHeight() - insets.top - insets.bottom;
+			g2.scale(1, -1);
+			g2.translate(0, -h - insets.top);
+
+			/////////////////////////////////
 			//Draw the overlapped areas
 			f = new File (fileOverlaped);
 			fr = new FileReader (f.getAbsoluteFile());
