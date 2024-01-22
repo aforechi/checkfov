@@ -131,8 +131,8 @@ public class CheckFoV
 				{  
 					String[] columns = sc.nextLine().split(",");
 
-					int Ax = Integer.parseInt(columns[0]);
-					int Ay = Integer.parseInt(columns[1]);
+					double Ax = Double.parseDouble(columns[0]);
+					double Ay = Double.parseDouble(columns[1]);
 					int radius = Integer.parseInt(columns[2]);
 					int vAngle = Integer.parseInt(columns[3]);
 					int orientation = Integer.parseInt(columns[4]);
@@ -165,8 +165,8 @@ public class CheckFoV
 				{  
 					String[] columns = sc.nextLine().split(",");
 
-					int Tx = Integer.parseInt(columns[0]);
-					int Ty = Integer.parseInt(columns[1]);
+					double Tx = Double.parseDouble(columns[0]);
+					double Ty = Double.parseDouble(columns[1]);
 				
 					Target t = new Target (counter, Tx, Ty);
 
@@ -296,8 +296,8 @@ public class CheckFoV
 	public boolean checkViewing (VSensor s, Target t)
 	{
 		//Positions of the targets
-		int x = t.getTx();
-		int y = t.getTy();
+		double x = t.getTx();
+		double y = t.getTy();
 
 		FoV fov = s.getFoV();
 		ArrayList<Vertex> vert = fov.getVertices();
